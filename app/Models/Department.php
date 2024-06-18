@@ -11,10 +11,7 @@ class Department extends Model
 {
     use HasFactory;
     protected $primaryKey='deptid';
-    public function program(){
-        return $this->hasMany(Program::class);
-    }
     public function college(){
-        return $this->belongsTo(College::class);
+        return $this->belongsTo(College::class, 'deptcollid', 'collid');
     }
 }

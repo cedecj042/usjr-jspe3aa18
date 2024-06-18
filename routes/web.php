@@ -11,4 +11,3 @@ Route::get('/show/student/{studid}',[UniversityController::class,'showStudent'])
 Route::get('/show/colleges',[UniversityController::class,'showAllCollege']);
 Route::get('/show/college/{collid}',[UniversityController::class,'showCollege']);
 Route::get('/show/departments',[UniversityController::class,'showAllDepartment']);
-Route::get('/show/department/{deptid}',[UniversityController::class,'showDepartment']);

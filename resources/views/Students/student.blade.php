@@ -1,5 +1,14 @@
-<div>
+@extends('layouts.app')
+@section('content')
+<div class="p-3">
     <!-- The whole future lies in uncertainty: live immediately. - Seneca -->
-    <br>
-    <h3>My name is {{$student->studfirstname}} {{$student->studlastname}}</h3>
+    <h5>Student Details</h5>
+    <hr>
+    <p>ID: {{$student->studid}}</p>
+    <p>First Name: {{$student->studfirstname}}</p>
+    <p>Mid Name: {{$student->studmidname}}</p>
+    <p>Last Name: {{$student->studlastname}}</p>
+    <p>Program: {{$student->studprogid}}</p>
+    <p>College: {{$student->studcollid}}</p>
 </div>
+@endsection

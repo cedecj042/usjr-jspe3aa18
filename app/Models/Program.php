@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\College;
 use App\Models\Department;
+use App\Models\Student;
+
 class Program extends Model
 {
     use HasFactory;
@@ -16,5 +18,9 @@ class Program extends Model
     
     public function department(){
         return $this->belongsTo(Department::class);
+    }
+
+    public function student(){
+        return $this->hasMany(Student::class,'studprogid','progid');
     }
 }

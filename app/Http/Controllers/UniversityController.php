@@ -37,9 +37,4 @@ class UniversityController extends Controller
         return view('departments.index',compact('departments'));
     }
 
-    public function showDepartment($id){
-        $department = Department::find($id);
-        $college = $department->college;
-        return view('departments.department',compact('department','college'));
-    }
 }

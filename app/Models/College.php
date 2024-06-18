@@ -23,4 +23,5 @@ class College extends Model
     public function program(){
         return $this->hasMany(Program::class,'progcollid','collid');
     }
+
 }
