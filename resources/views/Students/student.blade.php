@@ -9,6 +9,6 @@
     <p>Mid Name: {{$student->studmidname}}</p>
     <p>Last Name: {{$student->studlastname}}</p>
     <p>Program: {{$student->studprogid}}</p>
-    <p>College: {{$student->studcollid}}</p>
+    <p>College: {{$student->college->collfullname}}</p>
 </div>
 @endsection

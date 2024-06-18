@@ -20,7 +20,7 @@
                 <td>{{$student->studlastname}}</td>
                 <td>{{$student->studyear}}</td>
                 <td>{{$student->studprogid}}</td>
-                <td>{{$student->studcollid}}</td>
+                <td>{{$student->college->collfullname}}</td>
                 <td><a href="/show/student/{{$student->studid}}" class="btn btn-primary">Expand</a></td>
             </tr>
         @endforeach

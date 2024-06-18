@@ -14,11 +14,12 @@ class UniversityController extends Controller
     //
 
     public function showAllStudent(){
-        $students= Student::all();
+        // $students= Student::all();
+        $students = Student::with('college')->get();
         return view("students.index",compact("students"));
     }
     public function showStudent($id){
-        $student = Student::find($id);
+        $student = Student::with('college')->find($id);
         return view('students.student',compact("student"));
     }
     public function showAllCollege() {
